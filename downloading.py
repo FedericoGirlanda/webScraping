@@ -5,7 +5,7 @@ import base64
 import logging
 import socket
 
-totImages = 20
+totImages = 100
 
 # List of img src for the image downloads
 img_src = pd.read_csv('img_src_links.csv', sep='|')
@@ -31,14 +31,14 @@ def download_img():
             image_format = is_b64
             content = base64.b64decode(row.src_link.split(';base64')[1])
             try:
-                with open('images/'+row.search_terms+'.png'.format(image_format), 'wb') as f:
+                with open('images/'+row.search_terms+'/'+str(j%totImages)+'.jpg'.format(image_format), 'wb') as f:
                     f.write(content)
             except Exception as e:
                 logging.error(''+row.search_terms+' | '+row.src_link+' | '+str(e)+'')
         # Else, if it is a direct URL, then perform urlretrieve to download the image
         else:
             try:
-                urllib.request.urlretrieve(''+row.src_link+'', 'images/'+row.search_terms+'/'+str(j%totImages)+'.png')
+                urllib.request.urlretrieve(''+row.src_link+'', 'images/'+row.search_terms+'/'+str(j%totImages)+'.jpg')
             except Exception as e: 
                 logging.error(''+row.search_terms+' | '+row.src_link+' | '+str(e)+'')
 

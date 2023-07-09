@@ -1,14 +1,14 @@
 foods,search label
-pasta with pesto,pasta with pesto
-pasta with tomato sauce,pasta with tomato sauce
-pasta with meat sauce,pasta with meat sauce
-pasta with clams and mussels,pasta with clams and mussels
-pilaw rice with peppers and peas,pilaw rice with peppers and peas
-grilled pork cutlet,grilled pork cutlet
-fish cutlet,fish cutlet
-rabbit,rabbit
-seafood salad,seafood salad
-beans,beans
-basil potatoes,basil potatoes
-salad,salad
-bread,bread
+pasta_with_pesto,conchiglie rigate al pesto di basilico
+pasta_with_tomato_sauce,conchiglie rigate al pomodoro
+pasta_with_meat_sauce,conchiglie rigate al ragù
+pasta_with_clams_and_mussels,conchiglie rigate con sugo rosso di vongole e cozze
+pilaw_rice_with_peppers_and_peas,riso pilaw con peperoni e piselli
+grilled_pork_cutlet,cotoletta di maiale alla griglia
+fish_cutlet,cotoletta di pesce
+rabbit,coscia di coniglio alla griglia
+seafood_salad,insalata di pesce
+beans,fagioli lessi
+basil_potatoes,patate lesse con basilico
+salad,insalata con carote e pomodori
+bread,pane tipo mantovana
